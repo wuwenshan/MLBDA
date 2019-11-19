@@ -1,0 +1,61 @@
+1. Tous les titres des films.
+
+//FILM/TITRE
+
+2. Les titres des films d'horreur.
+
+//FILM[contains(GENRE,'Horreur')]
+
+3. Le résumé d'Alien.
+
+//FILM[TITRE = 'Alien']/RESUME
+
+4 Titre des films avec James Stewart.
+
+//FILM[ROLES/ROLE[PRENOM = 'James' and NOM = 'Stewart']]/TITRE
+
+5. Titre des films avec James Stewart et Kim Novak.
+
+//FILM[.//ROLE[PRENOM = 'James' and NOM = 'Stewart'] and .//ROLE[PRENOM = 'Kim' and NOM = 'Novak']]/TITRE
+
+6. Quels films ont un résumé ?
+
+//FILM[count(RESUME)>=1]/TITRE
+
+7. Quels films n'ont pas de résumé ?
+
+//FILM[not(RESUME)]/TITRE
+
+8. Quel est l'identifiant du metteur en scène du film Vertigo?
+
+//FILM[TITRE = 'Vertigo']/MES/@idref
+
+9. Quel rôle joue Harvey Keitel dans le film Reservoir dogs ?
+
+//FILM[.//TITRE = 'Reservoir dogs']/ROLES/ROLE[PRENOM = 'Harvey' and NOM = 'Keitel']/INTITULE
+
+10. Quel est le dernier film du document ?
+
+//FILM[last()]
+
+11. Quel est le titre du film qui précède immédiatement le film Shining (dans l'ordre du document).
+
+//FILM[TITRE = 'Shining']/preceding-sibling::FILM[1]/TITRE/text()
+
+12. Qui a mis en scène le film Eyes Wide Shut ?
+
+//FILM[TITRE = 'Eyes Wide Shut']/MES/@idref
+
+13. Donnez les titres des films qui contiennent un 'V' (utiliser la fonction contains)
+
+//FILM[contains(TITRE,'V')]/TITRE/text()
+
+14. Donner les noeuds qui ont exactement trois descendants (utiliser la fonction count).
+
+//*::(count(descendant) = '3')
+
+
+15. Donner les noeuds dont le nom contient la chaîne 'TU' (fonction name)
+
+//FILM[name()]
+

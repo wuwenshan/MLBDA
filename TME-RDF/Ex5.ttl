@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix f: <http://www.cems.uwe.ac.uk/empdept/concept/> .
+@prefix : <http://www.abc.org/> .
+
+
+#examens
+:allergie a :examen_medical;
+    :nom "allergene" ;
+    :seuil "12".
+:glycemie
+    a :examen_medical ;
+    :nom "glycemie" ;
+    :seuil "8".
+:plaquettes
+    a :examen_medical ;
+    :nom "plaquettes" ;
+    :seuil "90".
+#patients
+:smith
+    a :patient ;
+    :nom "smith" ;
+    :age "35". 
+:ben 
+    a :patient ;
+    :nom "ben" ;
+    :age "65". 
+#praticiens
+:salem
+    a :praticien ;
+    :grade :infirmier.
+:jade
+    a :praticien ;
+    :grade :medecin.
+#dossiers
+:smith :passe :alg.
+:alg :quoi :allergie ; 
+     :quand "2015" ;
+     :parQui :jade.
+:ben :passe :glc , :plq.
+:glc :quoi :glycemie ; 
+     :quand "2015" ;
+     :parQui :smith ;
+     :resultat "6".
+:plq :quoi :plaquette ;
+     :quand "2012" ;
+:parQui :jade ;
+:resultat "80".

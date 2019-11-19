@@ -1,0 +1,7 @@
+<!ELEMENT solaire (planete)*>
+<!ELEMENT planete (nom, diametre, satellite*, composant*)
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT diametre (#PCDATA)>
+<!ELEMENT satellite (nom, distance)>
+<!ELEMENT distance (#PCDATA)>
+<!ELEMENT composant (#PCDATA)>

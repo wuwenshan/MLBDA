@@ -1,0 +1,13 @@
+base <http://example.org>
+prefix foaf: <http://xmlns.com/foaf/0.1/> 
+prefix rel: <http://www.perceive.net/schemas/relationship/> 
+prefix : <http://www.abc.org/> 
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix univ: <http://www.faculty.ac>
+prefix xs: <http://www.w3.org/2001/XMLSchema#>
+
+select ?pra ?pa ?pa2
+where
+{
+ { ?pa :passe ?x } . { ?x :parQui ?pra } . { ?pa2 :passe ?y } { ?y :parQui ?pra } . FILTER(?pa!=?pa2) . FILTER(str(?pa)<str(?pa2))
+}

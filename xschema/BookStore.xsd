@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE xs:schema SYSTEM "XMLSchema.dtd">
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.books.org"
+            xmlns="http://www.books.org"
+            elementFormDefault="qualified">
+
+  <xs:element name="Book">
+    <xs:complexType>
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+	<xs:element ref="Title" />
+	<xs:element ref="Author" />
+	<xs:element ref="Date" />
+	<xs:element ref="ISBN" />
+	<xs:element ref="Publisher" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Title" type="xs:string" />
+  <xs:element name="Author" type="xs:string" />
+  <xs:element name="Date" type="xs:date" />
+  <xs:element name="ISBN" type="xs:string" />
+  <xs:element name="Publisher" type="xs:string" />
+  
+
+
+</xs:schema>
+

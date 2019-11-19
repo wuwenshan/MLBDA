@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix f: <http://www.cems.uwe.ac.uk/empdept/concept/> .
+@prefix : <http://www.abc.org/> .
+
+#singers 
+:Shania_Twain  
+    a foaf:Singer ; 
+    rdfs:label "Shania Twain"@en ; 
+    :birthDate "1965-08-28" ; 
+    :placeOfBirth "Windsor"@en ; 
+    :genre :country_pop , :country_rock , :rock , :pop ; 
+    :instruments "vocals" , :guitar. 
+:Whitney_Houston  
+    a foaf:Singer ; 
+    rdfs:label "Whitney Houston"@en ; 
+    :birthDate "1963-08-09" ; 
+    :placeOfBirth "Newark"@en ; 
+    :deathDate "2012-02-11" ; 
+    :genre :pop , :sould, :rnb ; 
+    :instruments "vocals" , :piano.    
+:Mariah_Carey  
+    a foaf:Singer ; 
+    rdfs:label "Mariah Carey"@en ; 
+    :birthDate "1969-03-27"; 
+    :placeOfBirth "Long Island"@en ; 
+    :genre :pop , :soul, :rnb ; 
+    :instruments "vocals" , :guitar. 
+:Jay-Z  
+    a foaf:Singer ; 
+    rdfs:label "Jay-Z"@en ; 
+    :birthDate "1969-12-04" ; 
+    :placeOfBirth "Brooklyn"@en ; 
+    :genre :hiphop ; 
+    :instruments "vocals". 
+#actors 
+:Emilia_Clarke  
+    a foaf:Actor ; 
+    rdfs:label "Emilia Clarke"@en ; 
+    :birthDate "1987-05-01"; 
+    :placeOfBirth "London"@en ; 
+#songs 
+:Emilia_Clarke  
+    :sang :fisherman. 
+:Whitney_Houston 
+    :sang :believe , :run. 
+:Mariah_Carey  
+     :sang :believe , :odds, :myall.
+:Shania_Twain  
+    :sang :kaching. 
+:Jay-Z 
+    :sang :empire. 

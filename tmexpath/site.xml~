@@ -1,0 +1,79 @@
+<site>
+<photos>
+<photo idP='p123'>
+         <appareil>Samsung T1</appareil> 
+         <catégorie>paysage</catégorie> 
+         <format> jpeg</format>
+         <taille>
+2056</taille>
+    </photo>
+    <photo idP='p254'>
+         <appareil>Nikon F1</appareil> 
+         <catégorie>enfants</catégorie> 
+         <format> jpeg</format>
+         <taille>1028</taille>
+    </photo>    
+    <photo idP='p678'>
+         <appareil>Samsung T1</appareil>
+         <catégorie>enfants</catégorie> 
+         <format> bmp</format>
+         <taille>1028</taille>
+    </photo>  
+    <photo idP='p354'>
+         <appareil>Nikon F1</appareil> 
+         <catégorie>portrait</catégorie> 
+         <form
+at> gif</format>
+         <taille>512</taille>
+    </photo>  
+   <photo idP='p442'>
+         <appareil>Canon D50</appareil>
+         <catégorie>animaux</catégorie> 
+         <format> gif</format>
+         <taille>512</taille>
+    </photo>  
+    <photo idP='
+p553'>
+         <appareil>Canon D50</appareil>
+         <catégorie>nature</catégorie> 
+         <format> gif</format>
+         <taille>512</taille>
+    </photo>  
+</photos>
+<utilisateurs>
+      <utilisateur idU='m23'>
+<nom>Bernard</nom>
+         <prénom>
+ Pierre</prénom>
+         <email>Pierre.Bernard@acces.fr</email>
+</utilisateur>
+ <utilisateur idU='m56'>
+        <nom>Martin</nom>
+        <prénom>Paul</prénom> 
+        <email>Paul.Martin@sept.fr</email>    
+   </utilisateur> 
+   <utilisateur idU='m62'>
+        <nom>Richard</nom>
+        <prénom>Thomas</prénom>
+        <email>Thomas.Richard@aol.fr</email>
+   </utilisateur>
+</utilisateurs
+> 
+<collections>
+   <collection idC='c67' idU='m23'>
+             <nom> Pour les copains</nom>
+             <publication idP='p123' date='17-12-2015'/>
+<publication idP='p254' date='18-12-2015'/>
+    </collection>   
+    <collection idC='c78' idU='m56'>
+             <nom> Collection publique</nom>
+             <publication idP='p678' date='24-12-2015'/>
+    </collection>
+   <collection idC='c34' idU='m62'>
+             <nom> Photos préférées</nom>
+             <publication idP='p354' date='02-01-2016'/>
+<publication idP='p442' date='02-01-2016'/>
+             <publication idP='p553' date='02-01-2016'/>
+    </collection>    
+</collections>
+</site>
